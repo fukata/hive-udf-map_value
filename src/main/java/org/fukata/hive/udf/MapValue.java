@@ -4,7 +4,7 @@ import org.apache.hadoop.hive.ql.exec.Description;
 import org.apache.hadoop.hive.ql.exec.UDF;
 import java.util.Map;
 
-@Description(name = "map_value", value = "map_value extract value from map", extended = "")
+@Description(name = "map_value", value = "_FUNC_(map, keys) - extract value from map")
 public class MapValue extends UDF {
     @SuppressWarnings("rawtypes")
     public String evaluate (Object map, Object...keys) {
